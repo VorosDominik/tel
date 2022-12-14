@@ -1,0 +1,73 @@
+body{
+ background-image:url(kepek/hatter.jpg) ;
+}
+main{
+display: grid;
+width: 50%;
+margin: auto;
+background-color: white;
+grid-template-areas: 
+"h h h h"
+"n a as as"
+"f f f f"
+;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+
+nav{
+   grid-area: n;
+   display: grid;
+   grid-template-rows: repeat(4) a; 
+}
+nav ul{
+    padding-left: 0;
+}
+nav li{
+    list-style: none;
+    background-color: blue;
+    text-align: center;
+    border-radius: 5px;
+    
+    padding: 2%;
+    margin: 2px;
+}
+article{
+    grid-area: a;
+    padding: 10px;
+}
+aside{
+    grid-area: as;
+}
+header{
+    background-image: url(kepek/fejlec.jpg);
+    grid-area: h;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+footer{
+    background-color: blue;
+    grid-area: f;
+}
+table,th,td{
+    border-collapse: collapse;
+}
+tr{
+    
+}
+tr:nth-child(odd){
+background-color: aqua;
+
+}
+h3{
+    text-align: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
